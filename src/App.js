@@ -12,42 +12,10 @@ function App() {
   return (
     <div>
        <div className="container tm-container">
-            
-            <div className="row navbar-row">
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
-                    
-                    <a href="javascript:void(0)" className="navbar-brand" id="go-to-top">Corie Lynch</a>
-                    
-                    <nav className="navbar navbar-full">
-                        
-                        <div className="collapse navbar-toggleable-md" id="tmNavbar">                            
+          
 
-                            <ul className="nav navbar-nav">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#tm-section-1">Home</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#tm-section-2">Clients</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#tm-section-3">About</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#tm-section-4">Contact + Links</a>
-                                </li>
-                            </ul>
+ <NavBar />
 
-                        </div>
-
-                    </nav>    
-                    
-                    <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                        &#9776;
-                    </button>
-                    
-                </div>
-            </div>
-            
             
             <div className="tm-page-content">                
                 
@@ -152,14 +120,13 @@ function App() {
                         <div className="tm-white-curve-text">
                             
                             <h2 className="tm-section-header green-text">Contact Me + Links</h2>
-                            <a href="https://github.com/corielynch" target="_blank"><img src="./img/github.png" style={{height: "70", width: "60;"}} /></a>
-                            <a href="https://www.linkedin.com/in/corie-lynch-1978a575/" target="_blank"><img src="./img/linkedin.png" style={{height: "75", width: "60"}} /></a>
+                            <a href="https://github.com/corielynch" target="_blank"><img src="./img/github.png" style={{height: "70%", width: "60%;"}} /></a>
 
-                        
+                            <a href="https://www.linkedin.com/in/corie-lynch-1978a575/" target="_blank"><img src="./img/linkedin.png" style={{height: "75%", width: "60%"}} /></a>
                             
                             <div className="contact-info-links-container">
                                 <span className="green-text contact-info">
-                                	<span className="contact-info-link"></span><img src="./img/gmail.jpg" style={{height: "75", width: "60;"}} />
+                                	<span className="contact-info-link"></span><img src="./img/gmail.jpg" style={{height: "75%", width: "60%"}} />
                                   </span>
                             </div>
                             
@@ -168,16 +135,7 @@ function App() {
                     </div>
                 </section> 
 
-                <footer className="row tm-footer">
-                    
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-
-                        <p className="text-xs-center tm-footer-text">Copyright &copy; Corie Lynch</p>
-                        
-                    </div>
-                    
-                </footer>                      
-
+               <Footer />
          
         </div>
     </div>

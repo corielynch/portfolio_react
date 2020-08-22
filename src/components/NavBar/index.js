@@ -1,34 +1,54 @@
 import React, { useState } from 'react';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+ 
 
 const NavBar = (props) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <div>
-      <Nav tabs>
-        <NavItem>
-          <NavLink href="#" active>About Me</NavLink>
-        </NavItem>
-        <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle nav caret>
-            Projects
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem header>React Directory</DropdownItem>
-            <DropdownItem disabled>CPS</DropdownItem>
-            <DropdownItem>Lynch Construction</DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
-        <NavItem>
-          <NavLink href="#">Github</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Contact Me</NavLink>
-        </NavItem>
-      </Nav>
+       
+       <div className="row navbar-row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
+                    
+                    <a href="javascript:void(0)" className="navbar-brand" id="go-to-top">Corie Lynch</a>
+                    
+                    <nav className="navbar navbar-full">
+                        
+                        <div className="collapse navbar-toggleable-md" id="tmNavbar">                            
+
+                            <ul className="nav navbar-nav">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#tm-section-1">Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#tm-section-2">Clients</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#tm-section-3">About</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#tm-section-4">Contact + Links</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </nav>    
+                    
+                    <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                        &#9776;
+                    </button>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+    
+    
     </div>
   );
 }

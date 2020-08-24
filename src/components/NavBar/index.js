@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
  
 
 const NavBar = (props) => {
 
   return (
     <div>
-       
-       <div className="row navbar-row">
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
-                    
-                    <a href="javascript:void(0)" className="navbar-brand" id="go-to-top">Corie Lynch</a>
-                    
+       <div className="container tm-container">
+            <div className="tm-page-content"> 
+                <div className="row navbar-row">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
+                        <a href="javascript:void(0)" className="navbar-brand" id="go-to-top">Corie Lynch</a>
                     <nav className="navbar navbar-full">
                         
                         <div className="collapse navbar-toggleable-md" id="tmNavbar">                            
@@ -40,6 +39,8 @@ const NavBar = (props) => {
                     
                 </div>
             </div>
+        </div>
+    </div>
 
 
 
